@@ -1,12 +1,12 @@
 <script>
-    console.log('hi')
+    import {pokemon} from "../stores/pokestore";
+    console.log($pokemon);
 </script>
 <svelte:head>
     <title>Svelte Pokedex</title>
 </svelte:head>
 <h1>Svelte kit Pokedex</h1>
-<style>
-    h1 {
-        color: rgb(141, 35, 35);
-    }
-</style>
+
+{#each $pokemon as pokeman}
+<p>{pokeman.name}</p>
+{/each}
