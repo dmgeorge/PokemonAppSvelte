@@ -1,8 +1,10 @@
 <script>
     import Nav from "../components/nav.svelte";
 </script>
+<div class="p-8" mawx-w-6xl mx-auto>
 <Nav/>
 <slot></slot>
+</div>
 <style>
     @tailwind base;
     @tailwind components;
